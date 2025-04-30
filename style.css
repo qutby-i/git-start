@@ -1,0 +1,12 @@
+/*
+
+*/
+html, body{
+    margin: 0;
+    padding: 0;
+    color: darkblue;
+}
+
+header, main, footer{
+    margin: 0 1rem;
+}
