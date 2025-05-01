@@ -78,5 +78,30 @@ tree
 100644 blob b990aa251c62e3e756be7a9441acb75ad46c206e    index.html
 100644 blob 00c834d47cee06a8ea12880fcafd4f9ec9f24a18    main.js
 100644 blob 91388a5f90d53d954be448eab2b72f0d12b137cf    style.css
-
+## git show --textconv :Readme.md
+➜  git-start git:(br-home) ✗  git show --textconv :Readme.md
+\➜  git-start git:(br-home) ✗git checkout br-news
+M       README.md
+Switched to branch 'br-news'
+Your branch is up to date with 'origin/br-news'.
+➜  git-start git:(br-news) git status
+On branch br-news
+Your branch is up to date with 'origin/br-news'.
+## git checkout master
+nothing to commit, working tree clean
+\➜  git-start git:(br-news) git checkout master 
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+➜  git-start git:(master) git pull -v
+POST git-upload-pack (226 bytes)
+From https://github.com/qutby-i/git-start
+ = [up to date]      master     -> origin/master
+ = [up to date]      br-home    -> origin/br-home
+ = [up to date]      br-news    -> origin/br-news
+Updating cf744bf..93865da
+Fast-forward
+ index.html         | 5 +++++
+ src/html/home.html | 2 +-
+ 2 files changed, 6 insertions(+), 1 deletion(-)
 ```
